@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Layout, Button } from "antd";
 import {GithubOutlined  } from "@ant-design/icons";     
-import MenuTop from "../components/MenuComponents/MenuTop";
-import MenuSider from "../components/MenuComponents/MenuSider";
+import MenuTop from "../components/AdminComponents/MenuTop";
+import MenuSider from "../components/AdminComponents/MenuSider";
 
 import "./GeneralLayout.scss";
 
@@ -24,7 +24,7 @@ export default function GeneralLayout(props) {
           <Content className="layout-admin__content">{children}</Content>
           <Footer className="layout-admin__footer">
           <Button type="link" onClick={event =>  window.location.href='https://github.com/SebastianEcheverryMejia/ERS-Parking-Client'}>
-            <GithubOutlined style={{ fontSize: "17px" }} /> SebastianEcheverryMejia
+            <GithubOutlined style={{ fontSize: "17px" }} /> ERS-Parking
           </Button>
         </Footer>
         </Layout>
