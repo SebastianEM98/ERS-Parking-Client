@@ -1,0 +1,49 @@
+@import "../../../src/scss/index.scss";
+
+.registerSuperv-form {
+  text-align: left;
+
+  .ant-form-item {
+    &:nth-child(3),
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+
+  &__input {
+    margin-left: 55%;
+    .ant-input-prefix {
+      i {
+        font-size: 0em + 13px / $defaultFontSize;
+      }
+    }
+
+    input {
+      font-size: 0em + 13px / $defaultFontSize;
+      &:focus {
+        border-color: $primary-color;
+        box-shadow: none;
+      }
+    }
+  }
+
+  &__button {
+    margin-left: 30%;
+    width: 30%;
+    font-size: 0em + 13px / $defaultFontSize;
+    background-color: $primary-color;
+    color: $font-light;
+    height: 30px;
+
+    &:hover {
+      background-color: $primary-color-hover;
+      color: $font-light;
+    }
+    &:focus,
+    &:active {
+      background-color: $primary-color;
+      color: $font-light;
+      border: 0;
+    }
+  }
+}

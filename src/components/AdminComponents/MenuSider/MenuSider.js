@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Layout, Menu } from "antd";
-import { HomeOutlined, AppstoreOutlined, PhoneOutlined} from "@ant-design/icons";
+import { HomeOutlined, AppstoreOutlined, UserOutlined, CarOutlined} from "@ant-design/icons";
 import "./MenuSider.scss";
 
 export default function MenuSider(props) {
@@ -12,7 +12,7 @@ export default function MenuSider(props) {
     <Sider className="admin-sider" collapsed={menuCollapsed}>
       <Menu theme="aliceblue" mode="inline" defaultSelectedKeys={["1"]}>
         <Menu.Item key="1">
-          <Link to={"/admin"}>
+          <Link to={"/"}>
             <HomeOutlined />
             <span className="nav-text">Home</span>
           </Link>
@@ -24,9 +24,15 @@ export default function MenuSider(props) {
           </Link>
         </Menu.Item>
         <Menu.Item key="3">
-          <Link to={"/admin/contact"}>
-            <PhoneOutlined />
-            <span className="nav-text">Contact</span>
+          <Link to={"/Supervisors"}>
+            <UserOutlined />
+            <span className="nav-text">Porteros</span>
+          </Link>
+        </Menu.Item>
+        <Menu.Item key="4">
+          <Link to={"/ParkingLots"}>
+            <CarOutlined />
+            <span className="nav-text">Parqueaderos</span>
           </Link>
         </Menu.Item>
       </Menu>
